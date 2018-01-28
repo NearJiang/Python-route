@@ -1,0 +1,9 @@
+print('Nike''\nadidas')
+
+Nike
+adidas
+
+'Nike''\nadidas'=
+'Nike\n''adidas'
+
+第一个字前加\n就是第一行空着

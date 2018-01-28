@@ -1,0 +1,27 @@
+确保所有东西除了汉字，别的都是英文版的（特别的标点符号！！！）
+
+for sentence in q:
+    if sentence[:6] != '======':
+        (role,line) = sentence.split(':',1)
+        if role == '波':
+            boy.append(line)
+        if role == '琪':
+            girl.append(line)
+    else:
+        z = 'boy' + str(count) + '.txt'
+        x = 'girl' + str(count) + '.txt'
+         
+        j = open(z, 'w')
+        s = open(x, 'w')
+        
+        j.writelines(boy)
+        s.writelines(girl)
+
+①z = 'boy' + str(count) + '.txt'
+  x = 'girl' + str(count) + '.txt'
+         
+  j = open(z, 'w')16:53 2017/12/12
+  s = open(x, 'w')	 
+   ①只是个包装程序，就是建了个盒子贴了名字，
+     else：执行的过程直接跳到
+     j.writelines(boy)/s.writelines(girl)

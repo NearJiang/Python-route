@@ -1,0 +1,15 @@
+w
+el
+
+
+
+>>> q=open('C:\\Users\\Near\\Desktop\\python\\split\\2222.txt','w')
+>>> q.writelines(['w\n''e'])
+>>> q.writelines('l')
+>>> q.writelines['as']
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    q.writelines['as']
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> q.close()
+>>> 

@@ -1,0 +1,40 @@
+guess（或者xx） = int(temp)  只能数字类  int表数字答案 temp表题目
+汉字间一定要加‘汉字’
+if/else下一定要缩进Tab
+ifxxx：
+else：（：一定要加）
+
+temp/thought/xxx = input（‘题目’）temp/thought什么的无所谓
+while不跟if同档：while
+                      if（上下位置不一致）
+while xxx
+      text = input（‘xxxxxxx’）
+：当xxx的时候，重复xxxxxxx
+
+while xxx
+     if
+     else
+     text/question/thought = int（‘xxx’） 
+     if/else/text上下一致
+if/while后面的 =  一定是==！！！！！！！
+
+a=“5”    a=5.99    a=5        a=5
+b=int(a)   b=int(a)  b=float(a) b=str(a)
+b=5        b=5       b=5.0      b=“5”
+
+a = a + 6可写成a += 6
+10 // 8=1   3.0 / 2=1.0
+5 % 2=1 （11 % 2=1）（4%2=0）11%3=2（%整除下来余的数）
+3 ** 2=9    ** x ：几次方
+
+中数字中安tab出现选择
+
+>>> list(filter(None,[True,1,0,False]))
+[True, 1]  filter会过滤掉所有Fales的事物，0也是，
+过滤就是要完美
+各种符号一定要英文版，特别是，逗号
+
+显示print红色，通常是上面少了括号
+报错的时候养成要看最底下的原因
+
+除了数字123，汉字和字母一定的‘ ’

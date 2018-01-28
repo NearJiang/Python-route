@@ -1,0 +1,7 @@
+我
+我
+热尔
+二二而儿热额人
+>>> q = open('C:\\Users\\Near\\Desktop\\split\\6666666666.txt','w')
+>>> q.writelines(['我\n', '我\n', '热尔\n', '二二而儿热额人\n'])
+>>> q.close()

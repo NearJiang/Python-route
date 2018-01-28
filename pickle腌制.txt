@@ -1,0 +1,21 @@
+>>> import pickle   
+有了想法
+>>> mylist = ['蒋爸爸','琪宝宝','ourson']
+准备材料list表
+>>> picklejar = open('mylist.pickle','wb')
+准备了名字为mylist.pickle的wb泡菜坛  wb（可写入的）
+>>> pickle.dump(mylist, picklejar)
+把材料倒入坛内
+>>> picklejar.close()
+封坛
+>>> picklejar = open('mylist.pickle','rb')
+开坛！！！
+>>> mylist2 = pickle.load(picklejar)
+把坛内的东西加载出来
+>>> print(mylist2)
+['蒋爸爸', '琪宝宝', 'ourson']
+上桌！！！！！！！！
+
+NOTE：pickle.dump(mylist, picklejar)
+逗号‘，’后空一格，一开始就卡在这，就不知道哪出问题了
+逗号‘，’后如果不是‘xxx'记得一定得空格一下！！！！！ 

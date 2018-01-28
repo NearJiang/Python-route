@@ -1,0 +1,16 @@
+while xxx：
+    if xxx：
+        xxx
+        break
+    xxx
+else：
+    xxxx
+
+
+
+try：
+    xxx
+except xxxError as reason：
+    print（‘出错了：’+str（reason））
+else：
+    print（‘没有任何异常’）

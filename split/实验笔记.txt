@@ -1,0 +1,35 @@
+q = open('C:\\Users\\Near\\Desktop\\split\\chatting.txt.txt')
+
+boy = []
+girl = []
+
+for sentence in q:
+    if sentence[:6] != '======':
+        (role,line) = sentence.split(':',1)
+        if role == '波':
+            boy.append(line)
+        if role == '琪':
+            girl.append(line)
+    else:
+        z = 'boy.txt'
+        x = 'girl.txt'
+         
+        j = open(z, 'w')
+        s = open(x, 'w')
+        
+        j.writelines(boy)
+        s.writelines(girl)
+
+        j.close()
+        s.close()
+第一段和第二段对话录入成功
+  加上  boy = []
+        girl = []
+单独的第二段对话
+
+执行第三段对话时，
+if role == '琪':
+            girl.append(line)
+else的条件是sentence[:6]==‘======’
+但第三段对话后没有=====
+所以终止，line写入不到文本中

@@ -1,0 +1,69 @@
+波:我①
+琪:爱②
+波:我③
+琪:人④
+⑤===========================================================
+波:热尔⑥
+琪:低声地回⑦
+⑧===========================================================
+波:二二而儿热额人⑨
+琪:儿额头让他日天人⑩
+for sentence in q:
+    if sentence[:6] != '======':
+        (role,line) = sentence.split(':',1)
+        if role == '波':
+            boy.append(line)
+        if role == '琪':
+            girl.append(line)
+    else:
+        z = 'boy.txt'
+        x = 'girl.txt'
+         
+        j = open(z, 'w')
+        s = open(x, 'w')
+        
+        j.writelines(boy)
+        s.writelines(girl)
+        j.close()
+        s.close()
+
+z = 'boy.txt'
+x = 'girl.txt'
+             
+j = open(z, 'w')
+s = open(x, 'w')
+            
+j.writelines(boy)
+s.writelines(girl)
+
+j.close()
+s.close()
+
+①代入for sentence in q: 符合if，line写入boy中
+②代入for sentence in q: 符合if，line写入girl中
+③代入for sentence in q: 符合if，line写入boy中
+④代入for sentence in q: 符合if，line写入girl中
+⑤代入for sentence in q:不符合if，代入else，boy和girl写入J/S
+   关闭J/S
+⑥代入for sentence in q: 符合if，line写入boy中
+⑦代入for sentence in q: 符合if，line写入girl中
+⑧代入for sentence in q:不符合if，代入else，boy和girl写入J/S
+   关闭J/S
+⑨代入for sentence in q: 符合if，line写入boy中
+⑩代入for sentence in q:符合if，line写入girl中
+到底了，for sentence in q:没有内容了，
+上面2段对话已经写入保存关闭，
+⑨⑩已写入boy/girl中，但没程序writelines它们
+所有最后在全局中加一段
+z = 'boy.txt'
+x = 'girl.txt'
+             
+j = open(z, 'w')
+s = open(x, 'w')
+            
+j.writelines(boy)
+s.writelines(girl)
+
+j.close()
+s.close()
+Okay，成功writelines，关闭。
